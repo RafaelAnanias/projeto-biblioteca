@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, main, footer {
+    width: 100%;
+    max-width: 800px;
+}
+
+header h1 {
+    color: #4a4a8a;
+    text-align: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #5c5cd6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4a4a8a;
+}
+
+#btn-listar-todos {
+    margin-bottom: 15px;
+    background-color: #6c757d;
+}
+
+.livro-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.livro-item.indisponivel {
+    background-color: #ffebee;
+    border-color: #ef9a9a;
+}
+
+.livro-info p {
+    margin: 5px 0;
+}
+
+.livro-info strong {
+    color: #4a4a8a;
+}
+
+.livro-acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn-acao {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.btn-remover {
+    background-color: #e53935;
+}
+
+.btn-remover:hover {
+    background-color: #c62828;
+}
+
+.btn-toggle-disp {
+    background-color: #43a047;
+}
+
+.btn-toggle-disp.emprestado {
+    background-color: #fdd835;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+}

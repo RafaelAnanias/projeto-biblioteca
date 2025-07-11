@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - Gerenciamento de Livros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Sistema de Gerenciamento da Biblioteca</h1>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Cadastrar Novo Livro</h2>
+            <form id="form-cadastro">
+                <input type="text" id="isbn" placeholder="ISBN (ID Único)" required>
+                <input type="text" id="titulo" placeholder="Título do Livro" required>
+                <input type="text" id="autor" placeholder="Autor" required>
+                <input type="number" id="ano" placeholder="Ano de Publicação" required>
+                <button type="submit">Adicionar Livro</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Buscar Livros</h2>
+            <form id="form-busca">
+                <input type="text" id="termo-busca" placeholder="Digite para buscar...">
+                <select id="tipo-busca">
+                    <option value="id">Buscar por ISBN</option>
+                    <option value="titulo">Buscar por Título</option>
+                    <option value="autor">Buscar por Autor</option>
+                </select>
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Acervo de Livros</h2>
+            <button id="btn-listar-todos">Listar Todos</button>
+            <div id="lista-livros">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Trabalho de Estrutura de Dados - Map e Hash</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
